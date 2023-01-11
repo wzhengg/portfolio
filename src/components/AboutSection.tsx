@@ -33,7 +33,7 @@ const Image = styled.div`
 const Text = styled.p`
   max-width: 480px;
   font-size: 1.2em;
-  color: #e2e8f0;
+  color: #f5f5f5;
   text-align: left;
 `;
 

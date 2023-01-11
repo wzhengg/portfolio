@@ -32,20 +32,20 @@ const WVULogo = styled.img`
 const SchoolName = styled.h2`
   font-size: 1.5em;
   font-weight: 500;
-  color: #f1f5f9;
+  color: #f5f5f5;
   margin: 1rem 0;
 `;
 
 const Detail = styled.p`
   font-size: 1.2em;
-  color: #e2e8f0;
+  color: #e5e5e5;
   max-width: 480px;
   padding: 0.5rem 0;
 `;
 
 const Courses = styled.span`
   font-weight: 300;
-  color: #cbd5e1;
+  color: #d4d4d4;
 `;
 
 function EducationSection() {

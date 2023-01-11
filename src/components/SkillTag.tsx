@@ -13,7 +13,7 @@ const Tag = styled.span`
 `;
 
 const Name = styled.p`
-  color: #cbd5e1;
+  color: #d4d4d4;
 `;
 
 const IconContainer = styled.div`

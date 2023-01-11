@@ -13,15 +13,16 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #374151;
+  background-color: #404040;
   padding: 2rem 1rem 2rem 1rem;
   margin: 1.5rem auto;
+  border-radius: 0.4rem;
 `;
 
 const Header = styled.h3`
   font-size: 1.2em;
   font-weight: 600;
-  color: #f1f5f9;
+  color: #f5f5f5;
   margin-bottom: 1rem;
 `;
 
