@@ -23,6 +23,11 @@ const IconContainer = styled.div`
 
 const Icon = styled.img`
   height: 1.3rem;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 function SkillTag({ skillName, icons }: Props) {
