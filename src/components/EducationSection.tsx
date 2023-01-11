@@ -18,6 +18,11 @@ const SectionBody = styled.div`
 const WVULogo = styled.img`
   height: 6rem;
   margin: 1rem 0;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   @media (min-width: 1024px) {
     height: 12rem;
