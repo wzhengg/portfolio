@@ -8,7 +8,7 @@ const Heading = styled.h1`
   font-size: 2.5em;
   font-weight: 600;
   color: #f8fafc;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
 function SectionHeading({ name }: Props) {
