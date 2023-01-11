@@ -2,6 +2,7 @@ import './App.css';
 import AboutSection from './components/AboutSection';
 import EducationSection from './components/EducationSection';
 import SkillsSection from './components/SkillsSection';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <AboutSection />
       <EducationSection />
       <SkillsSection />
+      <ContactSection />
     </div>
   );
 }
