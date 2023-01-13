@@ -1,39 +1,21 @@
-import styled from 'styled-components';
 import SkillTag from './SkillTag';
 import { Skill } from '../skills-data';
 
 type Props = {
   title: string;
-  skillsData: Skill[];
+  skills: Skill[];
 };
 
-const Card = styled.div`
-  flex: 1;
-  max-width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #404040;
-  padding: 2rem 1rem 2rem 1rem;
-  margin: 1.5rem auto;
-  border-radius: 0.4rem;
-`;
-
-const Header = styled.h3`
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #f5f5f5;
-  margin-bottom: 1rem;
-`;
-
-function SkillsCard({ title, skillsData }: Props) {
+function SkillsCard({ title, skills }: Props) {
   return (
-    <Card>
-      <Header>{title}</Header>
-      {skillsData.map((skill) => (
-        <SkillTag skillName={skill.name} icons={skill.icons} key={skill.name} />
+    <div className="my-6 mx-auto flex max-w-xs flex-1 flex-col items-center rounded bg-neutral-700 py-8 lg:max-w-[19rem]">
+      <h2 className="my-2 text-xl font-semibold text-neutral-100 lg:text-2xl">
+        {title}
+      </h2>
+      {skills.map(({ name, icons }) => (
+        <SkillTag name={name} icons={icons} key={name} />
       ))}
-    </Card>
+    </div>
   );
 }
 

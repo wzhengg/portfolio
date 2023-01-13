@@ -1,29 +1,19 @@
-import styled from 'styled-components';
-import SectionContainer from './reusable/SectionContainer';
-import SectionHeading from './reusable/SectionHeading';
-import { contactsData } from '../contacts-data';
+import Section from './reusable/SectionContainer';
+import Heading from './reusable/SectionHeading';
 import ContactTag from './ContactTag';
-
-const ContactsContainer = styled(SectionContainer)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Text = styled.p`
-  font-size: 1.3em;
-  margin-bottom: 1rem;
-`;
+import { contactsData } from '../contacts-data';
 
 function ContactSection() {
   return (
-    <ContactsContainer>
-      <SectionHeading name="Contact" />
-      <Text>Don't hesitate to connect with me or send me a message!</Text>
+    <Section>
+      <Heading name="Contact" />
+      <p className="mb-4 text-xl text-neutral-100 lg:text-2xl">
+        Don't hesitate to connect with me or send me a message!
+      </p>
       {contactsData.map(({ name, link, display }) => (
-        <ContactTag name={name} link={link} display={display} />
+        <ContactTag name={name} link={link} display={display} key={display} />
       ))}
-    </ContactsContainer>
+    </Section>
   );
 }
 

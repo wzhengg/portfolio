@@ -1,45 +1,20 @@
-import styled from 'styled-components';
+import { Skill } from '../skills-data';
 
-type Props = {
-  skillName: string;
-  icons: string[];
-};
-
-const Tag = styled.span`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-`;
-
-const Name = styled.p`
-  color: #d4d4d4;
-`;
-
-const IconContainer = styled.div`
-  display: flex;
-  gap: 0.2rem;
-`;
-
-const Icon = styled.img`
-  height: 1.3rem;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
-
-function SkillTag({ skillName, icons }: Props) {
+function SkillTag({ name, icons }: Skill) {
   return (
-    <Tag>
-      <Name>{skillName}</Name>
-      <IconContainer>
+    <span className="flex items-center gap-2 py-1">
+      <p className="text-neutral-300 lg:text-lg">{name}</p>
+      <div className="flex gap-1">
         {icons.map((icon) => (
-          <Icon src={icon} alt={skillName} key={icon} />
+          <img
+            src={icon}
+            alt={name}
+            key={icon}
+            className="h-5 transition-transform hover:scale-125 lg:h-6"
+          />
         ))}
-      </IconContainer>
-    </Tag>
+      </div>
+    </span>
   );
 }
 

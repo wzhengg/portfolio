@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import Section from './reusable/SectionContainer';
+import Heading from './reusable/SectionHeading';
 import SkillsCard from './SkillsCard';
 import {
   languagesData,
@@ -6,37 +7,18 @@ import {
   miscellaneousData,
 } from '../skills-data';
 
-const Section = styled.section`
-  padding: 4rem 0;
-`;
-
-const Heading = styled.h1`
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #f8fafc;
-  margin-bottom: 1rem;
-`;
-
-const CardContainer = styled.div`
-  @media (min-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-`;
-
 function SkillsSection() {
   return (
     <Section>
-      <Heading>Skills</Heading>
-      <CardContainer>
-        <SkillsCard title="Languages" skillsData={languagesData} />
+      <Heading name="Skills" />
+      <div className="justify-between lg:flex">
+        <SkillsCard title="Languages" skills={languagesData} />
         <SkillsCard
           title="Libraries, Frameworks, Databases"
-          skillsData={frameworksData}
+          skills={frameworksData}
         />
-        <SkillsCard title="Miscellaneous" skillsData={miscellaneousData} />
-      </CardContainer>
+        <SkillsCard title="Miscellaneous" skills={miscellaneousData} />
+      </div>
     </Section>
   );
 }

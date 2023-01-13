@@ -1,32 +1,22 @@
-import styled from 'styled-components';
+import { useState } from 'react';
 import { Contact } from '../contacts-data';
 
-const Tag = styled.div`
-  padding: 0.5rem 0;
-`;
-
-const Anchor = styled.a`
-  color: #d4d4d4;
-  text-decoration: none;
-
-  &:hover > span {
-    display: inline;
-    color: #f5f5f5;
-  }
-`;
-
-const HiddenText = styled.span`
-  display: none;
-`;
-
 export function ContactTag({ name, link, display }: Contact) {
+  const [hover, setHover] = useState(false);
+
   return (
-    <Tag>
-      <Anchor href={link} target="_blank" rel="noreferrer noopener">
-        {name}
-        <HiddenText>{`: ${display}`}</HiddenText>
-      </Anchor>
-    </Tag>
+    <div className="my-3">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer noopener"
+        className="text-neutral-300 lg:text-lg"
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        {hover ? display : name}
+      </a>
+    </div>
   );
 }
 

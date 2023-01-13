@@ -1,18 +1,13 @@
-import styled from 'styled-components';
-
 type Props = {
   name: string;
 };
 
-const Heading = styled.h1`
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #fafafa;
-  margin-bottom: 2rem;
-`;
-
 function SectionHeading({ name }: Props) {
-  return <Heading>{name}</Heading>;
+  return (
+    <h1 className="mb-8 text-4xl font-semibold text-neutral-50 lg:mb-12 lg:text-5xl">
+      {name}
+    </h1>
+  );
 }
 
 export default SectionHeading;

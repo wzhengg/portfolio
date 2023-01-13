@@ -1,16 +1,7 @@
 import { PropsWithChildren } from 'react';
-import styled from 'styled-components';
 
-interface Props extends PropsWithChildren {
-  className?: string;
-}
-
-const Section = styled.section`
-  padding: 4rem 0;
-`;
-
-function SectionContainer({ className, children }: Props) {
-  return <Section className={className}>{children}</Section>;
+function SectionContainer({ children }: PropsWithChildren) {
+  return <section className="py-16">{children}</section>;
 }
 
 export default SectionContainer;
