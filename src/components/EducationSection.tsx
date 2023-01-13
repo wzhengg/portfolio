@@ -7,7 +7,7 @@ function EducationSection() {
       <Heading name="Education" />
       <div className="items-center lg:flex">
         <img
-          src="/icons/wvu.svg"
+          src="icons/wvu.svg"
           alt="wvu-logo"
           className="my-4 mx-auto h-24 transition-transform hover:scale-110 lg:h-60"
         />

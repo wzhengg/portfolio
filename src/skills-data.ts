@@ -1,4 +1,4 @@
-const ICON_DIR = '/icons';
+const ICON_DIR = 'icons';
 
 export type Skill = {
   name: string;
