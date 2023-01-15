@@ -7,7 +7,7 @@ function ContactSection() {
   return (
     <Section>
       <Heading name="Contact" />
-      <p className="mb-4 text-xl text-neutral-100 lg:text-2xl">
+      <p className="mb-4 text-xl text-zinc-600 dark:text-zinc-200 lg:text-2xl">
         Don't hesitate to connect with me or send me a message!
       </p>
       {contactsData.map(({ name, link, display }) => (

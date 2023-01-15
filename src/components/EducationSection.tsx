@@ -12,21 +12,21 @@ function EducationSection() {
           className="my-4 mx-auto h-24 transition-transform hover:scale-110 lg:h-60"
         />
         <div className="mx-auto">
-          <h2 className="text-2xl font-medium text-neutral-100">
+          <h2 className="text-2xl font-medium text-zinc-700 dark:text-zinc-100">
             West Virginia University
           </h2>
-          <p className="mx-auto max-w-lg py-2 text-lg text-neutral-200">
+          <p className="mx-auto max-w-lg py-2 text-lg text-zinc-600 dark:text-zinc-200">
             August 2020 - May 2024
           </p>
-          <p className="mx-auto max-w-lg py-2 text-lg text-neutral-200">
+          <p className="mx-auto max-w-lg py-2 text-lg text-zinc-600 dark:text-zinc-200">
             B.S. Computer Science & Computer Engineering
           </p>
-          <p className="mx-auto max-w-lg py-2 text-lg text-neutral-200">
+          <p className="mx-auto max-w-lg py-2 text-lg text-zinc-600 dark:text-zinc-200">
             GPA: 4.0
           </p>
-          <p className="mx-auto max-w-lg py-2 text-lg text-neutral-200">
+          <p className="mx-auto max-w-lg py-2 text-lg text-zinc-600 dark:text-zinc-200">
             {'Courses: '}
-            <span className="font-light text-neutral-400">
+            <span className="font-light text-zinc-400">
               Data Structures & Algorithms, Operating Systems, Software
               Engineering, Programming Languages, Artificial Intelligence, Data
               & Computer Communications, Database Design, Discrete Math

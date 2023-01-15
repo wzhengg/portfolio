@@ -10,7 +10,7 @@ export function ContactTag({ name, link, display }: Contact) {
         href={link}
         target="_blank"
         rel="noreferrer noopener"
-        className="text-neutral-300 lg:text-lg"
+        className="text-zinc-400 lg:text-lg"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >

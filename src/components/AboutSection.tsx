@@ -6,7 +6,7 @@ function AboutSection() {
     <Section>
       <Heading name="About Me" />
       <div className="flex items-center justify-around">
-        <p className="max-w-xl text-lg text-neutral-100 lg:text-left lg:text-xl">
+        <p className="max-w-xl text-lg text-zinc-600 dark:text-zinc-300 lg:text-left lg:text-xl">
           Hi! 👋 I'm an aspiring software engineer with an interest in the
           practical application of theory to technical challenges such as
           software scalability, architecture, and design. I love learning new
